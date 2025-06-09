@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Development",
+    "icon": "fa-solid fa-tv"
+  },
+  {
+    "name": "Mac OS",
+    "icon": "fa-brands fa-apple"
+  },
+  {
+    "name": "Cinema",
+    "icon": "fa-solid fa-film"
+  },
+  {
+    "name": "Coffee",
+    "icon": "fa-solid fa-mug-hot"
+  },
+  {
+    "name": "Music",
+    "icon": "fa-solid fa-music"
+  },
+  {
+    "name": "Games",
+    "icon": "fa-solid fa-dice-d6"
+  },
+  {
+    "name": "Designing",
+    "icon": "fa-solid fa-palette"
+  },
+  {
+    "name": "Sports",
+    "icon": "fa-solid fa-bicycle"
+  },
+  {
+    "name": "Painting",
+    "icon": "fa-solid fa-fill"
+  },
+  {
+    "name": "Reading",
+    "icon": "fa-solid fa-book-open"
+  },
+  {
+    "name": "Android",
+    "icon": "fa-solid fa-robot"
+  },
+  {
+    "name": "Other Activity",
+    "icon": "fa-solid fa-person-running"
+  }
+]

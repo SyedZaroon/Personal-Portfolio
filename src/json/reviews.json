@@ -1,0 +1,23 @@
+[
+  {
+    "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, dignissimos.",
+    "rating": 5,
+    "image": "./images/review.jpg",
+    "clientName": "Client 1",
+    "designation": "Designer"
+  },
+  {
+    "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, dignissimos.",
+    "rating": 4,
+    "image": "./images/review.jpg",
+    "clientName": "Client 2",
+    "designation": "Developer"
+  },
+  {
+    "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, dignissimos.",
+    "rating": 5,
+    "image": "./images/review.jpg",
+    "clientName": "Client 3",
+    "designation": "Manager"
+  }
+]
