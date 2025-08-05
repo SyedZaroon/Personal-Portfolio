@@ -1,50 +1,50 @@
 [
   {
-    "name": "Development",
-    "icon": "fa-solid fa-tv"
+    "name": "Liquid",
+    "icon": "fa-solid fa-droplet"
   },
   {
-    "name": "Mac OS",
-    "icon": "fa-brands fa-apple"
+    "name": "Shopify",
+    "icon": "fa-brands fa-shopify"
   },
   {
-    "name": "Cinema",
-    "icon": "fa-solid fa-film"
+    "name": "StoreFront Api",
+    "icon": "fa-solid fa-store"
   },
   {
-    "name": "Coffee",
-    "icon": "fa-solid fa-mug-hot"
+    "name": "React",
+    "icon": "fa-brands fa-react"
   },
   {
-    "name": "Music",
-    "icon": "fa-solid fa-music"
+    "name": "JavaScript",
+    "icon": "fa-brands fa-js"
   },
   {
-    "name": "Games",
-    "icon": "fa-solid fa-dice-d6"
+    "name": "HTML",
+    "icon": "fa-brands fa-html5"
   },
   {
-    "name": "Designing",
-    "icon": "fa-solid fa-palette"
+    "name": "CSS",
+    "icon": "fa-brands fa-css3-alt"
   },
   {
-    "name": "Sports",
-    "icon": "fa-solid fa-bicycle"
+    "name": "Git",
+    "icon": "fa-brands fa-git-alt"
   },
   {
-    "name": "Painting",
-    "icon": "fa-solid fa-fill"
+    "name": "Tailwind",
+    "icon": "fa-solid fa-wind"
   },
   {
-    "name": "Reading",
-    "icon": "fa-solid fa-book-open"
+    "name": "WordPress",
+    "icon": "fa-brands fa-wordpress"
   },
   {
-    "name": "Android",
-    "icon": "fa-solid fa-robot"
+    "name": "Elementor",
+    "icon": "fa-brands fa-elementor"
   },
   {
-    "name": "Other Activity",
-    "icon": "fa-solid fa-person-running"
+    "name": "WooCommerce",
+    "icon": "fa-solid fa-cart-shopping"
   }
 ]

@@ -1,32 +1,17 @@
 [
   {
-    "icon": "fa-brands fa-uikit",
-    "title": "UI/UX Design",
-    "description": "The phrasal sequence of the is now so that many campaign and benefit"
+    "icon": "fa-brands fa-shopify",
+    "title": "Shopify Development",
+    "description": "Custom Shopify themes using Liquid and modern design to build fast, responsive, and conversion-focused e-commerce stores."
   },
   {
-    "icon": "fa-brands fa-apple",
-    "title": "iOS App Designer",
-    "description": "The phrasal sequence of the is now so that many campaign and benefit"
+    "icon": "fa-brands fa-react",
+    "title": "React Development",
+    "description": "High-performance, component-based web interfaces using React.js for dynamic, scalable, and interactive applications."
   },
   {
-    "icon": "fa-solid fa-camera",
-    "title": "Photography",
-    "description": "The phrasal sequence of the is now so that many campaign and benefit"
-  },
-  {
-    "icon": "fa-solid fa-pen-nib",
-    "title": "Graphic Designer",
-    "description": "The phrasal sequence of the is now so that many campaign and benefit"
-  },
-  {
-    "icon": "fa-solid fa-globe",
-    "title": "Web Security",
-    "description": "The phrasal sequence of the is now so that many campaign and benefit"
-  },
-  {
-    "icon": "fa-solid fa-headset",
-    "title": "24/7",
-    "description": "The phrasal sequence of the is now so that many campaign and benefit"
+    "icon": "fa-brands fa-wordpress",
+    "title": "WordPress Customization",
+    "description": "Tailored WordPress solutions using popular builders like Elementor and WPBakery to deliver user-friendly and functional websites."
   }
 ]

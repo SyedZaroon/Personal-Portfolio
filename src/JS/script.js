@@ -105,7 +105,7 @@ fetch("./json/hobbies.json")
       .forEach((hobby) => {
         const hobbyDiv = document.createElement("div");
         hobbyDiv.className =
-          "flex gap-5 rounded-lg shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 py-4 pl-2 pr-20 group";
+          "flex items-center gap-5 rounded-lg shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 py-4 pl-2 pr-20 group";
 
         const Divicon = document.createElement("div");
         const icon = document.createElement("i");
@@ -349,19 +349,15 @@ fetch("./json/reviews.json")
       reviewElement.innerHTML = `
                     <div class="bg-white dark:bg-dark_600 rounded shadow shadow-gray-200 dark:shadow-gray-800 m-2 p-6 relative">
                         <i class="fa-solid fa-quote-left text-3xl text-primary"></i>
+                        <p class="text-xl text-black hover:text-primary dark:hover:text-primary dark:text-white font-medium">
+                         ${review.clientName}
+                       </p>
                         <p class="text-lg">${review.quote}</p>
                         <ul class="star-rating flex gap-1">
                             ${generateStars(review.rating)}
                         </ul>
-                        <i class="fa-solid fa-caret-down text-5xl m-auto absolute -bottom-[31px] left-1/2 transform -translate-x-1/2"></i>
                     </div>
-                    <div class="text-center pt-4 ml-4">
-                        <img src="${review.image}" width="80px" height="80px" alt="reviews" class="rounded-full" />
-                        <p class="text-xl text-black hover:text-primary dark:hover:text-primary dark:text-white font-medium">
-                            ${review.clientName}
-                        </p>
-                        <p class="text-lg">${review.designation}</p>
-                    </div>
+                  
                 `;
 
       // Append the review element to the container

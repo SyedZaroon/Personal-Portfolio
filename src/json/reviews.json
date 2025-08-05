@@ -1,23 +1,51 @@
 [
   {
-    "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, dignissimos.",
+    "quote": "Syed delivered a flawless Shopify store for our brand. Fast, clean code and excellent communication throughout the project.",
     "rating": 5,
-    "image": "./images/review.jpg",
-    "clientName": "Client 1",
-    "designation": "Designer"
+    "image": "./images/review1.jpg",
+    "clientName": "Emily Carter",
+    "designation": "E-commerce Manager"
   },
   {
-    "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, dignissimos.",
+    "quote": "Very professional and skilled. He customized our WordPress site exactly how we wanted — highly recommended!",
+    "rating": 5,
+    "image": "./images/review2.jpg",
+    "clientName": "James Lee",
+    "designation": "Marketing Director"
+  },
+  {
+    "quote": "Responsive, knowledgeable, and easy to work with. The React-based frontend he built is fast and user-friendly.",
     "rating": 4,
-    "image": "./images/review.jpg",
-    "clientName": "Client 2",
-    "designation": "Developer"
+    "image": "./images/review3.jpg",
+    "clientName": "Sophia Ahmed",
+    "designation": "Tech Lead"
   },
   {
-    "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, dignissimos.",
+    "quote": "Handled our Shopify theme customization quickly and professionally. Very satisfied with the results!",
     "rating": 5,
-    "image": "./images/review.jpg",
-    "clientName": "Client 3",
-    "designation": "Manager"
+    "image": "./images/review4.jpg",
+    "clientName": "David Kim",
+    "designation": "Startup Founder"
+  },
+  {
+    "quote": "Syed has a great eye for detail and a strong understanding of web technologies. Will definitely hire again.",
+    "rating": 5,
+    "image": "./images/review5.jpg",
+    "clientName": "Rachel Fernandez",
+    "designation": "Product Manager"
+  },
+  {
+    "quote": "The best developer I’ve worked with on Fiverr. Clean code, timely delivery, and solid communication.",
+    "rating": 4,
+    "image": "./images/review6.jpg",
+    "clientName": "Michael Tan",
+    "designation": "Digital Consultant"
+  },
+  {
+    "quote": "Excellent experience from start to finish. He went above and beyond to deliver a polished Shopify store.",
+    "rating": 5,
+    "image": "./images/review7.jpg",
+    "clientName": "Ayesha Malik",
+    "designation": "Brand Owner"
   }
 ]
