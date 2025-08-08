@@ -1,58 +1,37 @@
 [
     {
       "id": 1,
-      "image": "./images/project/project1.jpg",
-      "title": "Project 1",
-      "description": "My Project 1",
-      "icon": "fa-solid fa-camera"
+      "image": "./images/project/Mobile-Direct.png",
+      "url": "https://mobiledirectonline.co.uk/",
+      "title": "Mobile Direct",
+      "tech": ["Shopify", "Liquid", "JavaScript"],
+      "icon": "fa-solid fa-plus"
     },
-    {
-      "id": 2,
-      "image": "./images/project/project2.jpg",
-      "title": "Project 2",
-      "description": "My Project 2",
-      "icon": "fa-solid fa-camera"
-    },
-    {
-      "id": 3,
-      "image": "./images/project/project3.jpg",
-      "title": "Project 3",
-      "description": "My Project 3",
-      "icon": "fa-solid fa-camera"
-    },
-    {
-      "id": 4,
-      "image": "./images/project/project4.jpg",
-      "title": "Project 4",
-      "description": "My Project 4",
-      "icon": "fa-solid fa-camera"
-    },
-    {
-      "id": 5,
-      "image": "./images/project/project5.jpg",
-      "title": "Project 5",
-      "description": "My Project 5",
-      "icon": "fa-solid fa-camera"
-    },
-    {
-      "id": 6,
-      "image": "./images/project/project6.jpg",
-      "title": "Project 6",
-      "description": "My Project 6",
-      "icon": "fa-solid fa-camera"
-    },
-    {
-      "id": 7,
-      "image": "./images/project/project7.jpg",
-      "title": "Project 7",
-      "description": "My Project 7",
-      "icon": "fa-solid fa-camera"
-    },
-    {
-      "id": 8,
-      "image": "./images/project/project8.jpg",
-      "title": "Project 8",
-      "description": "My Project 8",
-      "icon": "fa-solid fa-camera"
-    }
+     {
+       "id": 2,
+       "image": "./images/project/refurbi.png",
+       "url": "https://refurbi.co.uk/",
+       "title": "Refurbi",
+       "tech": ["Shopify", "Liquid", "JavaScript"],
+       "icon": "fa-solid fa-plus"
+     },
+      {
+        "id": 3,
+        "image": "./images/project/PriceFirst.png",
+        "url": "https://github.com/SyedZaroon/PriceFirst.git",
+        "title": "PriceFirst",
+        "tech": ["React", "Swiper"],
+        "icon": "fa-solid fa-plus"
+      },
+       {
+         "id": 4,
+         "image": "./images/project/MindTails.png",
+         "url": "https://github.com/SyedZaroon/Mindtails.git",
+         "title": "Mindtails",
+         "tech": ["React"],
+         "icon": "fa-solid fa-plus"
+       }
+
   ]
+
+  

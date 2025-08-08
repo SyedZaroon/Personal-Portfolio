@@ -48,7 +48,7 @@ window.addEventListener("scroll", function () {
 
 // ==================  Typing Text Start  ====================
 const textElement = document.getElementById("typing-text");
-const phrases = ["Zaroon Ali", "Web Developer"];
+const phrases = ["Zaroon Ali", "Shopify Dev", "React Developer"];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -167,160 +167,48 @@ fetch("./json/projects.json")
   .then((response) => response.json())
   .then((projects) => {
     const projectContainer = document.getElementById("project-container");
+
     projects.forEach((project) => {
       const projectDiv = document.createElement("div");
-      projectDiv.className = "relative group";
+      projectDiv.className =
+        "relative group w-[500px] h-auto overflow-hidden rounded-lg shadow-lg";
 
-      projectDiv.innerHTML = `<div
-                            class=" inset-0 absolute  bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-[rgba(255,255,255,0.5)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0">
-                        </div>
-                        <img src="${project.image}" alt="project" width="500px" height="500px"
-                            class="rounded-lg transition-all duration-300 z-0 project-img" />
-                        <div
-                            class="flex flex-col absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                            <p class="project-title text-xl text-white hover:text-primary font-black">
-                                ${project.description}
-                            </p>
-                            <p class="project-des text-lg">${project.title}</p>
-                        </div>
-                        <i
-                            class="${project.icon} project-icons absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 bg-primary text-white hover:bg-primary_dark p-3 rounded-full text-lg"></i>
-                    </div>`;
+      // Create tech badges
+      const techTags = project.tech
+        .map(
+          (tech) =>
+            `<span class="bg-white text-black text-xs font-semibold p-1 rounded">${tech}</span>`
+        )
+        .join(" ");
+
+      projectDiv.innerHTML = `
+        <a href="${project.url}" target="_blank" class="block">
+          <!-- Overlay -->
+          <div class="inset-0 absolute bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-[rgba(255,255,255,0.5)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></div>
+
+          <!-- Project Image -->
+          <img src="${project.image}" alt="${project.title}" width="500px" height="500px"
+               class="rounded-lg transition-all duration-300 z-0 project-img object-cover w-full h-full" />
+
+          <!-- Title & Tech Stack -->
+          <div class="flex flex-col absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+            <p class="project-title text-xl text-white hover:text-primary font-black mb-2">${project.title}</p>
+            <div class="flex flex-wrap gap-2">
+              ${techTags}
+            </div>
+          </div>
+
+          <!-- Icon -->
+          <i class="${project.icon} project-icons absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 bg-primary text-white 
+                    hover:bg-primary_dark p-3 rounded-full text-lg"></i>
+        </a>
+      `;
 
       projectContainer.appendChild(projectDiv);
     });
+  });
 
-    // ==================  Gallery  ====================
-
-    const projectImg = document.querySelectorAll(".project-img");
-    const projectIcons = document.querySelectorAll(".project-icons");
-    const projectTitle = document.querySelectorAll(".project-title");
-    const projectDes = document.querySelectorAll(".project-des");
-    const modelBox = document.querySelector(".model-box");
-    const modelImg = document.querySelector(".model-img");
-    const modelTitle = document.querySelector(".model-title");
-    const modelDes = document.querySelector(".model-des");
-    const cross = document.querySelector(".cross");
-    const next = document.querySelector(".next");
-    const back = document.querySelector(".back");
-    let currentIndex = 0;
-
-    // Function to open the modal with the current index
-    const openModal = (index) => {
-      modelBox.classList.remove("hidden");
-      currentIndex = index;
-      modelImg.src = projectImg[currentIndex].src;
-      modelTitle.innerHTML = projectTitle[currentIndex].innerHTML;
-      modelDes.innerHTML = projectDes[currentIndex].innerHTML;
-      document.body.style.overflow = "hidden";
-    };
-
-    // Loop to add event listeners to each project icon
-    projectIcons.forEach((icon, index) => {
-      icon.addEventListener("click", () => {
-        openModal(index);
-      });
-    });
-
-    // Event listener for the next button
-    next.addEventListener("click", () => {
-      if (currentIndex < projectIcons.length - 1) {
-        openModal(currentIndex + 1); 
-      }
-    });
-
-
-    back.addEventListener("click", () => {
-      if (currentIndex > 0) {
-        openModal(currentIndex - 1); 
-      }
-    });
-
-    cross.addEventListener("click", () => {
-      modelBox.classList.add("hidden");
-      document.body.style.overflow = "auto";
-    });
-
-    document.addEventListener("click", (event) => {
-      const isNextOrBack =
-        event.target.closest(".next") || event.target.closest(".back");
-      const isModelBox = modelBox.contains(event.target);
-
-      if (!isNextOrBack && isModelBox) {
-        modelBox.classList.add("hidden");
-        document.body.style.overflow = "auto";
-      }
-    });
-
-    // ==================  Swipe Detection ====================
-
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    const handleTouchStart = (event) => {
-      touchStartX = event.touches[0].clientX; // Record the initial touch position
-    };
-
-    const handleTouchMove = (event) => {
-      touchEndX = event.touches[0].clientX; // Update the touch position
-    };
-
-    const handleTouchEnd = () => {
-      if (touchEndX - touchStartX > 50) {
-        // Swiped right (previous project)
-        if (currentIndex > 0) {
-          openModal(currentIndex - 1); // Decrement the index
-        }
-      } else if (touchStartX - touchEndX > 50) {
-        // Swiped left (next project)
-        if (currentIndex < projectIcons.length - 1) {
-          openModal(currentIndex + 1); // Increment the index
-        }
-      }
-    };
-
-    // Adding touch event listeners for swipe detection
-    modelBox.addEventListener("touchstart", handleTouchStart, {
-      passive: true,
-    });
-    modelBox.addEventListener("touchmove", handleTouchMove, { passive: true });
-    modelBox.addEventListener("touchend", handleTouchEnd, { passive: true });
-
-    // Mouse drag detection
-    let mouseStartX = 0;
-    let mouseEndX = 0;
-
-    const handleMouseDown = (event) => {
-      mouseStartX = event.clientX; // Record the initial mouse position
-    };
-
-    const handleMouseMove = (event) => {
-      if (event.buttons === 1) {
-        // Check if mouse button is pressed
-        mouseEndX = event.clientX; // Update the mouse position
-      }
-    };
-
-    const handleMouseUp = () => {
-      if (mouseEndX - mouseStartX > 50) {
-        // Mouse dragged right (previous project)
-        if (currentIndex > 0) {
-          openModal(currentIndex - 1); // Decrement the index
-        }
-      } else if (mouseStartX - mouseEndX > 50) {
-        // Mouse dragged left (next project)
-        if (currentIndex < projectIcons.length - 1) {
-          openModal(currentIndex + 1); // Increment the index
-        }
-      }
-    };
-
-    // Adding mouse event listeners for drag detection
-    modelBox.addEventListener("mousedown", handleMouseDown);
-    modelBox.addEventListener("mousemove", handleMouseMove);
-    modelBox.addEventListener("mouseup", handleMouseUp);
-  })
-  .catch((error) => console.error("Error loading review data:", error));
 
 // ==================  Gallery  ====================
 
