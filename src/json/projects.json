@@ -30,7 +30,16 @@
          "title": "Mindtails",
          "tech": ["React"],
          "icon": "fa-solid fa-plus"
-       }
+       },
+        {
+          "id": 5,
+          "image": "./images/project/PowerHouse.png",
+          "url": "https://zaroonstor.myshopify.com/",
+          "title": "Power House",
+          "tech": ["Shopify" ,"Liquid"],
+          "icon": "fa-solid fa-plus"
+        }
+
 
   ]
 
