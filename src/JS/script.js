@@ -226,7 +226,7 @@ fetch("/src/json/reviews.json")
         "flex",
         "flex-col",
         "py-4",
-        "justify-center",
+        "justify-center", 
         "items-center",
         "shrink-0",
         "w-full",
