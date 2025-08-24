@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "./images/project/Mobile-Direct.png",
+      "image": "/src/images/project/Mobile-Direct.png",
       "url": "https://mobiledirectonline.co.uk/",
       "title": "Mobile Direct",
       "tech": ["Shopify", "Liquid", "JavaScript"],
@@ -9,7 +9,7 @@
     },
      {
        "id": 2,
-       "image": "./images/project/refurbi.png",
+       "image": "/src/images/project/refurbi.png",
        "url": "https://refurbi.co.uk/",
        "title": "Refurbi",
        "tech": ["Shopify", "Liquid", "JavaScript"],
@@ -17,7 +17,7 @@
      },
       {
         "id": 3,
-        "image": "./images/project/PriceFirst.png",
+        "image": "/src/images/project/PriceFirst.png",
         "url": "https://github.com/SyedZaroon/PriceFirst.git",
         "title": "PriceFirst",
         "tech": ["React", "Swiper"],
@@ -25,7 +25,7 @@
       },
        {
          "id": 4,
-         "image": "./images/project/MindTails.png",
+         "image": "/src/images/project/MindTails.png",
          "url": "https://github.com/SyedZaroon/Mindtails.git",
          "title": "Mindtails",
          "tech": ["React"],
@@ -33,7 +33,7 @@
        },
         {
           "id": 5,
-          "image": "./images/project/PowerHouse.png",
+          "image": "/src/images/project/PowerHouse.png",
           "url": "https://zaroonstor.myshopify.com/",
           "title": "Power House",
           "tech": ["Shopify" ,"Liquid"],

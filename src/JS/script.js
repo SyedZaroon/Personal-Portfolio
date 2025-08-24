@@ -97,7 +97,7 @@ window.addEventListener("scroll", () => {
 
 // ==================  Hobbies Start  ====================
 
-fetch("./json/hobbies.json")
+fetch("/src/json/hobbies.json")
   .then((response) => response.json())
   .then((hobbies) => {
     const container = document.getElementById("hobbies-container");
@@ -129,7 +129,7 @@ fetch("./json/hobbies.json")
 
 // ==================  Services section Start  ====================
 
-fetch("./json/service.json")
+fetch("/src/json/service.json")
   .then((response) => response.json())
   .then((services) => {
     const serviceContainer = document.getElementById("service-container");
@@ -163,7 +163,7 @@ fetch("./json/service.json")
 
 // ==================  Project section Start  ====================
 
-fetch("./json/projects.json")
+fetch("/src/json/projects.json")
   .then((response) => response.json())
   .then((projects) => {
     const projectContainer = document.getElementById("project-container");
@@ -213,7 +213,7 @@ fetch("./json/projects.json")
 // ==================  Gallery  ====================
 
 // ==================  Testimonaisl Start  ====================
-fetch("./json/reviews.json")
+fetch("/src/json/reviews.json")
   .then((response) => response.json()) // Parse the response as JSON
   .then((data) => {
     // Loop through the review data and create HTML dynamically
