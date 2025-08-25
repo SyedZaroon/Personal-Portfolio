@@ -12,7 +12,7 @@ function toggleDarkMode() {
     switchsun.classList.remove("hidden");
   }
 }
-
+console.log("JS file loaded ✅");
 // ==================  Mobile Menu  Start  ====================
 
 let mobileButton = document.getElementById("nav-toggle"); // Corrected variable name
